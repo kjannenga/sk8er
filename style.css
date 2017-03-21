@@ -1,0 +1,259 @@
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+html {
+  background-image:url(assets/bg.jpg);
+}
+
+ul{
+  list-style: none;
+}
+
+#container {
+  width:620px;
+  padding:10px;
+  margin:auto;
+  display:wrap;
+}
+
+#container:after {
+  content:"";
+  display:block;
+  clear:both;
+  border-bottom:1px solid grey;
+
+}
+
+#social ul{
+  display:inline-block;
+  
+  
+}
+#social a{
+  color:white;
+}
+
+.menu {
+  display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+    list-style: none;
+    color: white; 
+    font-weight: lighter;
+    font-size:12px;
+
+}
+
+.menu li {
+  text-transform: uppercase;
+      background: #b4292e;
+      height: 40px;
+      line-height: 40px;
+      text-align: center; 
+      padding:0 5px;
+}
+
+.menu li a {
+  color:white;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+
+li:hover{
+  background-color:#b4292e;
+  opacity: .5;
+
+}
+
+#slideshow{
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: flex-end;
+  justify-content: center;
+}
+
+#slideshow div{
+  height:150px;
+  width:600px;
+  background-color:green;
+  background-image:url(assets/slides.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  border:3px solid white ;
+}
+
+#news{
+  display:flex;
+
+}
+
+.newsbox > div {
+  height:220px;
+  width:196px;
+  background-color: white;
+  margin-top:15px;
+  float:left;
+  margin:15px 2px 15px 2px; 
+  flex-wrap: wrap;
+   border:3px solid white;
+}
+
+#skateboarderinfo:after {
+  content:"";
+  display:block;
+  clear:both;
+}
+
+.skateboarders {
+  position:relative;
+}
+
+.skateboarders div {
+  background:black;
+  color:white;
+  width:190px;
+  height:150px;
+  line-height:150px;
+  text-align:center;
+  float:left;
+  border:2px solid white;
+  background-image:url(assets/sk8er-4.png);
+  -webkit-background-size: cover;
+  background-position: center;
+  text-transform:uppercase;
+  background-position: 80% 0%;
+  margin:5px;
+  text-overflow: wrap;
+  font-style: bold;
+
+
+
+}
+
+.skateboarders div:nth-child(2){
+  background-image:url(assets/sk8er-3.png);
+  background-position:15% 0%;
+}
+
+.skateboarders div:nth-child(3) {
+  background-image: url(assets/sk8er-1.png);
+  clear:left;
+  width:390px;
+  background-position: center center;
+}
+
+.skateboarders div:nth-child(4) {
+  background-image:url(assets/sk8er-2.png);
+  height:305px;
+  line-height:300px;
+  margin-top:-150px;
+}
+
+.skateboarders .arrow {
+  width:115px;
+  height:50px;
+  position: absolute;
+  line-height:50px;
+  top:50px;
+  left:-150px;
+  border:none;
+  background-color:#b4292e;
+  background-image:none;
+  padding:0;
+  font-size:12px;
+
+}
+
+.arrow:after{
+content:"";
+width: 0;
+display:block;
+height: 0;
+border-style: solid;
+border-width: 25px 0 25px 25px;
+border-color: transparent transparent transparent #b4292e;
+position: relative;
+left:115px;
+top:-50px;
+
+}
+
+#boards{
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: flex-end;
+  justify-content: center;
+  margin-top:15px;
+  
+}
+
+#boards div{
+  height:150px;
+  width:600px;
+  background-color:blue;
+  border:3px solid white;
+  background-image:url(assets/skateboardrow.png);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+
+
+}
+
+#contact {
+  display: flex;
+  list-style:none;
+  margin-top:15px;
+
+
+}
+
+#contact div{
+  background-color: white;
+  padding:15px;
+  width:300px;
+  align-items: stretch;
+  font-weight: lighter;
+
+}
+
+#contact ul{
+  display:flex;
+  justify-content: space-around;
+}
+
+
+form {
+  align-items: stretch;
+  display:flex;
+  flex-direction:column;
+
+  
+}
+
+#message {
+  height:55px;
+}
+
+#submit {
+  background-color:#b4292e ;
+  width:100px;
+  text-align:center;
+  border:none;
+  color:white;
+  align-self: flex-end;
+  }
+
+
+
